@@ -10,7 +10,7 @@
 <div class="container mt-5">
     <h1 class="mb-4">Edit Product</h1>
 
-    <form method="post" th:action="@{/products/{id}(id=${product.id})}">
+    <form method="post" th:action="${'/products/' + product.id}">
         <input name="_method" type="hidden" value="put">
 
         <div class="mb-3">
@@ -38,7 +38,7 @@
 
         <div class="mb-3">
             <button class="btn btn-primary" type="submit">Update Product</button>
-            <a class="btn btn-secondary" th:href="@{/products/{id}(id=${product.id})}">Cancel</a>
+            <a class="btn btn-secondary" th:href="${'/products/' + product.id}">Cancel</a>
         </div>
     </form>
 </div>
