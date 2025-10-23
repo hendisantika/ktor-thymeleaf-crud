@@ -5,7 +5,7 @@ val postgres_version: String by project
 val hikaricp_version: String by project
 
 plugins {
-    kotlin("jvm") version "2.2.0"
+    kotlin("jvm") version "2.2.21"
     id("io.ktor.plugin") version "3.2.3"
 }
 
