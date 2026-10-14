@@ -6,7 +6,7 @@ val hikaricp_version: String by project
 
 plugins {
     kotlin("jvm") version "2.4.21"
-    id("io.ktor.plugin") version "3.3.3"
+    id("io.ktor.plugin") version "3.6.0"
 }
 
 group = "com.example"
